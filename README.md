@@ -13,3 +13,6 @@ pnpm dev
 # or
 bun dev
 ```
+
+NextJS 8080 port
+NestJS 3000 port
