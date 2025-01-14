@@ -25,6 +25,7 @@ export default function RootLayout({
   return (
     <html>
       <body>
+      <h1><a href="/">WEB</a></h1>
         {children}
       </body>
     </html>
