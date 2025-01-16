@@ -7,6 +7,7 @@ export default function Home() {
     <h2>Hello!</h2>
     Hello, Next JS!
     <Link href="/users">Users</Link>
+    <Link href="/main">Main</Link>
     </>
   );
 }
