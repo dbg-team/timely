@@ -25,9 +25,10 @@ export default function RootLayout({
   return (
     <html>
       <body>
-      <h1><a href="/">WEB</a></h1>
+      {/* 여기에 header 넣어야함 Navigation bar*/}
         {children}
       </body>
+    {/* 여기에 footer 넣어야함 저작권 정보 사이트 정보 등등*/}
     </html>
   );
 }
