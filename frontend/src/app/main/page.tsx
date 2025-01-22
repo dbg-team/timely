@@ -17,6 +17,7 @@ import CalendarIcon from "@/assets/calendar.png";
 import ClockIcon from "@/assets/clock.png";
 import ProfileIcon from "@/assets/profle.png";
 import ZoominIcon from "@/assets/zoomin.png";
+import ArrowUpIcon from "@/assets/arrow-up.png";
 
 
 const meetingData = {
@@ -172,53 +173,80 @@ export default function MainLogout() {
         </div>
       </section>
 
-      {/* Stats Section */}
-      <section className="px-12 py-16">
-        <div className="grid grid-cols-3 gap-6">
-          {Object.entries(statsData).map(([key, data]) => (
-            <Card key={key} className="bg-[#f0f2ff] p-5">
-              <CardHeader>
-                <CardTitle className="text-lg text-[#5f5f5f]">
-                  {data.title}
-                </CardTitle>
-                <p className="text-2xl font-bold">
-                  <span className="text-black">
-                    {data.subtitle.split(" ")[0]}{" "}
-                  </span>
-                  <span className="text-[#101e6b]">
-                    {data.subtitle.split(" ")[1]}
-                  </span>
+      <section className="px-12 py-10 flex justify-center">
+        <div className="flex flex-wrap justify-center gap-6">
+          {/* 카드 1 */}
+          <Card key="department" className="bg-[#f0f2ff] w-[470px] h-[270px] p-5 shadow-md rounded-[15px]">
+            <CardHeader>
+              <CardTitle className="text-[18px] text-[#5f5f5f]">
+                팀플 학과
+              </CardTitle>
+              <p className="text-2xl font-bold">
+                <span className="text-black">가장 많은 팀플이 생성된</span>
+                <span className="text-[#101e6b]"> 학과</span>
+              </p>
+            </CardHeader>
+            <CardContent className="flex items-start gap-6">
+              <Image
+                src={DepartmentIcon}
+                alt="department icon"
+                className="w-24 h-24"
+                width={96}
+                height={96}
+              />
+              <div>
+                <p className="text-[#101e6b] text-2xl font-bold">
+                  카이스트 기술경영학부
                 </p>
-              </CardHeader>
-              <CardContent className="flex items-center gap-6">
-                <Image
-                  src={DepartmentIcon}
-                  alt={`${key} icon`}
-                  className="w-24 h-24"
-                  width={96}
-                  height={96}
-                />
-                <div>
-                  <p className="text-[#101e6b] text-2xl font-bold">
-                    {data.value}
-                  </p>
-                  <p className="text-black text-3xl font-bold">{data.count}</p>
-                </div>
-              </CardContent>
-            </Card>
-          ))}
+                <p className="text-black text-3xl font-bold">16회</p>
+              </div>
+            </CardContent>
+          </Card>
+          <Card key="subject" className="bg-[#f0f2ff] w-[470px] h-[270px] p-5 shadow-md rounded-[15px]">
+            <CardHeader>
+              <CardTitle className="text-[18px] text-[#5f5f5f]">
+                팀플 학과
+              </CardTitle>
+              <p className="text-2xl font-bold">
+                <span className="text-black">가장 많은 팀플이 생성된</span>
+                <span className="text-[#101e6b]"> 학과</span>
+              </p>
+            </CardHeader>
+            <CardContent className="flex items-start gap-6">
+              <Image
+                src={DepartmentIcon}
+                alt="department icon"
+                className="w-24 h-24"
+                width={96}
+                height={96}
+              />
+              <div>
+                <p className="text-[#101e6b] text-2xl font-bold">
+                  카이스트 기술경영학부
+                </p>
+                <p className="text-black text-3xl font-bold">16회</p>
+              </div>
+            </CardContent>
+          </Card>
 
-          <Card className="bg-[#f0f2ff] p-8 flex flex-col items-center gap-8">
-            <ArrowUp className="w-24 h-24" />
+          {/* 카드 2 */}
+          <Card className="bg-[#f0f2ff] w-[300px] h-[270px] p-8 shadow-md rounded-[15px] flex flex-col items-center justify-center gap-8">
+            <Image 
+              src={ArrowUpIcon}
+              alt="login"
+              className="w-24 h-24"
+            />
             <div className="text-center">
               <p className="text-[#5f5f5f] text-xl font-bold">
                 더 다양한 기능을 위해
               </p>
               <p className="text-black text-[25px] font-bold">
-                지금 로그인하세요
+                지금 로그인하세요!
               </p>
             </div>
           </Card>
+
+
         </div>
       </section>
     </div>
