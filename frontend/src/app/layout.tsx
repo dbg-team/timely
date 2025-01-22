@@ -25,18 +25,10 @@ export default function RootLayout({
   return (
     <html>
       <body>
-      <h1><a href="/">WEB</a></h1>
-      <ol>
-        <li><a href="/read/1">html</a></li>
-        <li><a href="/read/2">css</a></li>
-      </ol>
+      {/* 여기에 header 넣어야함 Navigation bar*/}
         {children}
-      <ul>
-        <li><a href="/create">Create</a></li>
-        <li><a href="/update/1">Update</a></li>
-        <li><input type="button" value="delete"></input></li>
-      </ul>
       </body>
+    {/* 여기에 footer 넣어야함 저작권 정보 사이트 정보 등등*/}
     </html>
   );
 }
