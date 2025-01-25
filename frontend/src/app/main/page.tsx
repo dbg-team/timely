@@ -12,6 +12,7 @@ import {
   Users,
 } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import DepartmentIcon from "@/assets/clipboard.png";
 import CalendarIcon from "@/assets/calendar.png";
 import ClockIcon from "@/assets/clock.png";
@@ -71,7 +72,9 @@ export default function MainLogout() {
             로그인/회원가입
           </span>
           <Settings className="w-6 h-6" />
-          <Users className="w-6 h-6" />
+          <Link href="/mypage">
+            <Users className="w-6 h-6 cursor-pointer" />
+          </Link>
         </div>
       </header>
 
