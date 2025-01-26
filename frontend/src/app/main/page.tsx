@@ -65,7 +65,7 @@ export default function MainLogout() {
   return (
     <div className="min-h-screen bg-[#dee3ff]">
       {/* Header */}
-      <header className="h-[84px] flex items-center justify-between px-12">
+      <header className="h-[60px] flex items-center justify-between px-12">
         <h1 className="text-[32px] font-bold text-[#101e6b]">When2meet</h1>
         <div className="flex items-center gap-4">
           <span className="text-[#101e6b] text-[15px] font-medium">
